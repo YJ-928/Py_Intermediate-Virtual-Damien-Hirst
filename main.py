@@ -47,9 +47,9 @@ def turtle_paints(Number_of_Lines):
 
 
 print(logo)
-turtle_paints(Number_of_Lines=int(
-    input("How many lines of Dots you need in your painting? : ")))
-if input("Do you want to draw again?, Type 'y' for Yes 'n' for No: ").lower() == "y":
+turtle_paints(Number_of_Lines=turtle.numinput(title="Number of lines",
+              prompt="Enter the number of lines? that you want in your painting: "))
+if turtle.textinput(title="Play Again?", prompt="Do you want to draw again?, Type 'y' for Yes 'n' for No: ").lower() == "y":
     turtle_paints(Number_of_Lines=int(
         input("How many lines of Dots you need in your painting? : ")))
 else:
